@@ -11,12 +11,12 @@ public class TestBackedCollection {
 		s.add(20);
 		s.add(34);
 		s.add(40);
-		Set<Integer> s1=s.headSet(34);
+		Set<Integer> s1=s.headSet(34); //it is view
 		System.out.println(s);
 		System.out.println(s1);
 		s.add(15);
 		System.out.println(s);
-		System.out.println(s1);
+		System.out.println(s1); //s1 will print 15 also
 		Set<Integer> s2=s.tailSet(34);
 		System.out.println(s);
 		System.out.println(s1);
